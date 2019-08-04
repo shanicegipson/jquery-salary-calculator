@@ -8,7 +8,7 @@ function readyNow() {
     render();
 
     $('.js-btn-employee').on('click', addEmployee);
-    $('.js-btn-delete').on('click', deleteEmployeeRow);
+    $('.js-btn-delete').on('click', deleteEmployee);
 }
 
 
@@ -61,10 +61,10 @@ function addTotalSalary() {
     
     let total = $('#totalMonthlyBudget');
     total.empty();
-    total.append (totalSalary );
+    total.append ( totalSalary );
     
 }
 
-Function deleteEmployeeRow() { 
-
+function deleteEmployee() {
+    console.log ('bye');
 }

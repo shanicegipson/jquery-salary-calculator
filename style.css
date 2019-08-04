@@ -1,6 +1,6 @@
 .container {
     align-self: auto;
-    border: 2px solid lightblue; 
+    border: 2px solid lightseagreen; 
 }
 
 h2 {
@@ -34,4 +34,12 @@ tbody > tr > td {
 
 .js-btn-employee {
     background: lightseagreen;
+}
+
+thead {
+    border: 1px solid lightgray;
+}
+
+calculator {
+    border: 5px pink;
 }
