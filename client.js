@@ -8,6 +8,7 @@ function readyNow() {
     render();
 
     $('.js-btn-employee').on('click', addEmployee);
+    $('.js-btn-delete').on('click', deleteEmployeeRow);
 }
 
 
@@ -62,4 +63,8 @@ function addTotalSalary() {
     total.empty();
     total.append (totalSalary );
     
+}
+
+Function deleteEmployeeRow() { 
+
 }
