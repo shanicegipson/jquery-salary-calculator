@@ -16,20 +16,23 @@ function addEmployee() {
         firstName: $('.js-input-first').val(),
         lastName: $('.js-input-last').val(),
         idNumber: $('.js-input-id').val(),
-        titlePosition: ($('.js-input-title').val()),
+        titlePosition: $('.js-input-title').val(),
         salary: $('.js-input-salary').val(),
     }
-    console.log(newEmployeeSalary);
-
     employees.push(newEmployeeSalary);
-
+    
     render();
 
+    $('.js-input-first').val(''),
+    $('.js-input-last').val(''),
+    $('.js-input-id').val(''),
+    $('.js-input-title').val(''),
+    $('.js-input-salary').val('')
 }
 
 function render() {
-    console.log('render');
-    const tableElement = $('.js-table');
+   
+    const tableElement = $('.js-table-data');
 
     tableElement.empty();
     for (let i = 0; i < employees.length; i++) {
@@ -43,4 +46,8 @@ function render() {
             <td>${employee.salary}</td>
         </tr>`);
     }
+}
+
+function addTotal (){
+    
 }

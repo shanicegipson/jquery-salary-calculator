@@ -14,19 +14,20 @@
 
 <body>
     <h2>Salary Calculator</h2>
+    <h3>Add Employee</h3>
 
     <div class = "container">
-            <input class="js-input-first" type="text" placeholder="First Name" id="firstName">
-            <input class="js-input-last" type="text" placeholder="Last Name" id="lastName">
-            <input class="js-input-id" type="number" placeholder="Id" id="id">
-            <input class="js-input-title" type="text" placeholder="Title" id="title">
-            <input class="js-input-salary" type="number" placeholder="Salary" id="salary">
-            <button id="js-btn-employee">Submit</button>
+            <input class="js-input-first" name="First Name" type="text" placeholder="First Name">
+            <input class="js-input-last" name="Last Name"type="text" placeholder="Last Name">
+            <input class="js-input-id" name="Id" type="number" placeholder="Id">
+            <input class="js-input-title" name="Title" type="text" placeholder="Title">
+            <input class="js-input-salary" name="Annual Salary" type="number" placeholder="Annual Salary">
+            <button class="js-btn-employee">Submit</button>
     </div>
 
-    <div class="container">
-            <h2>Employees</h2>
-            <div class="js-table"></div>
+    <div class= "container">
+            <h3>Employees</h3>
+            <div class="js-table-data"></div>
 
             <table cellspacing="0">
             <thead>
@@ -45,12 +46,11 @@
                     <td> -- </td>
                     <td> -- </td>
                     <td> -- </td>
-                    <td> -- </td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td>Total Monthly:</td>
+                    <td colspan="4">Total Monthly:</td>
                 </tr>
             </tfoot>
         </table>

@@ -1,11 +1,38 @@
 .container {
     align-self: auto;
+    border: 5px solid lightblue;
 }
 
 .table {
     border: 5px solid #000000;
+    width: 100%;
 }
 
-.input {
-    border: 9px solid #000000;
+h2 {
+    text-align: center;
+}
+
+
+thead,
+tfoot {
+
+    background: white;
+}
+
+table {
+    background: white;
+    border: 1px solid #3f3f3f;
+    width: 100%;
+}
+
+
+tbody > tr > td {
+    border: 1px solid #3f3f3f;
+    padding: 6px;
+}
+
+
+
+.js-btn-employee {
+    background: lightseagreen;
 }
