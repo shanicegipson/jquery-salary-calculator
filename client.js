@@ -45,9 +45,21 @@ function render() {
             <td>${employee.titlePosition}</td>
             <td>${employee.salary}</td>
         </tr>`);
+        addTotalSalary();
     }
 }
 
-function addTotal (){
+function addTotalSalary() {
+
+    let totalSalary = 0;
+
+    for (let i=0; i<employees.length; i++){
+        
+        totalSalary += parseInt(employees[i].salary);
+    }
+    
+    let total = $('#totalMonthlyBudget');
+    total.empty();
+    total.append (totalSalary );
     
 }
