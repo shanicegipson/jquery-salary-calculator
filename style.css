@@ -1,0 +1,11 @@
+.container {
+    align-self: auto;
+}
+
+.table {
+    border: 5px solid #000000;
+}
+
+.input {
+    border: 9px solid #000000;
+}

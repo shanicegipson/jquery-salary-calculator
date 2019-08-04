@@ -4,21 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="jQuery.js"></script>
+    <script src="client.js"></script>
+
     <title>Salary Calculator</title>
-    <script src="client.js" charset="utf-8"></script>
-    <script src="jQuery copy.js" charset="utf-8"></script>
 </head>
 
 
 <body>
     <h2>Salary Calculator</h2>
 
-    <input class="js-input-first" type="text" placeholder="First Name" id="firstName">
-    <input class="js-input-last" type="text" placeholder="Last Name" id="lastName">
-    <input class="js-input-id" type="number" placeholder="Id" id="id">
-    <input class="js-input-title" type="text" placeholder="Title" id="title">
-    <input class="js-input-salary" type="number" placeholder="Salary" id="salary">
-    <button id="add">Submit</button>
+    <div class = "container">
+            <input class="js-input-first" type="text" placeholder="First Name" id="firstName">
+            <input class="js-input-last" type="text" placeholder="Last Name" id="lastName">
+            <input class="js-input-id" type="number" placeholder="Id" id="id">
+            <input class="js-input-title" type="text" placeholder="Title" id="title">
+            <input class="js-input-salary" type="number" placeholder="Salary" id="salary">
+            <button id="js-btn-employee">Submit</button>
+    </div>
+
+    <div class="container">
+            <h2>Employees</h2>
+            <div class="js-table"></div>
+
+            <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Annual Salary</th>
+                </tr>
+            </thead>
+            <tbody class="js-table-data">
+                <tr>
+                    <td> -- </td>
+                    <td> -- </td>
+                    <td> -- </td>
+                    <td> -- </td>
+                    <td> -- </td>
+                    <td> -- </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total Monthly:</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+    
     
 </body>
 </html>
